@@ -97,7 +97,7 @@ async def next_page(bot, query):
         btn = [
             [
                 InlineKeyboardButton(
-                   text=f"{get_size(file.file_size)} ⚡ {file.file_name}", callback_data=f'{pre}#{file.file_id}'
+                   text=f"{get_size[(file.file_size)]} ⚡ {file.file_name}", callback_data=f'{pre}#{file.file_id}'
                 ),
             ]
             for file in files
@@ -119,7 +119,7 @@ async def next_page(bot, query):
         if settings['auto_delete']:
             btn.insert(0, 
             [
-                InlineKeyboardButton(f'𝖳𝗂𝗉𝗌', 'info','oshada'),
+                InlineKeyboardButton(f'𝖳𝗂𝗉𝗌', 'info', ),
                 InlineKeyboardButton(f'𝖳𝗂𝗉𝗌', 'info')
             ]
             )
@@ -127,7 +127,7 @@ async def next_page(bot, query):
         else:
             btn.insert(0, 
             [
-                InlineKeyboardButton(f'𝖳𝗂𝗉𝗌', 'info','oshada'),
+                InlineKeyboardButton(f'𝖳𝗂𝗉𝗌', 'info', ),
                 InlineKeyboardButton(f' 𝖳𝗂𝗉𝗌', 'info')
             ]
             )
@@ -139,7 +139,7 @@ async def next_page(bot, query):
         if settings['auto_delete']:
             btn.insert(0, 
             [
-                InlineKeyboardButton(f'𝖳𝗂𝗉𝗌', 'info','oshada'),
+                InlineKeyboardButton(f'𝖳𝗂𝗉𝗌', 'info', ),
                 InlineKeyboardButton(f' 𝖳𝗂𝗉𝗌', 'info')
             ]
             )
@@ -147,7 +147,7 @@ async def next_page(bot, query):
         else:
             btn.insert(0, 
             [
-                InlineKeyboardButton(f'𝖳𝗂𝗉𝗌', 'info','oshada'),
+                InlineKeyboardButton(f'𝖳𝗂𝗉𝗌', 'info', ),
                 InlineKeyboardButton(f' 𝖳𝗂𝗉𝗌', 'info')
             ]
             )
@@ -1321,7 +1321,7 @@ async def auto_filter(client, msg, spoll=False):
         if settings['auto_delete']:
             btn.insert(0, 
             [
-                InlineKeyboardButton(f'𝖳𝗂𝗉𝗌', 'info','oshada'),
+                InlineKeyboardButton(f'𝖳𝗂𝗉𝗌', 'info', ),
                 InlineKeyboardButton(f' 𝖳𝗂𝗉𝗌', 'info')
             ]
             )
@@ -1329,7 +1329,7 @@ async def auto_filter(client, msg, spoll=False):
         else:
             btn.insert(0, 
             [
-                InlineKeyboardButton(f'𝖳𝗂𝗉𝗌', 'info','oshada'),
+                InlineKeyboardButton(f'𝖳𝗂𝗉𝗌', 'info', ),
                 InlineKeyboardButton(f' 𝖳𝗂𝗉𝗌', 'info')
             ]
             )
@@ -1341,7 +1341,7 @@ async def auto_filter(client, msg, spoll=False):
         if settings['auto_delete']:
             btn.insert(0, 
             [
-                InlineKeyboardButton(f'𝖳𝗂𝗉𝗌', 'info','oshada'),
+                InlineKeyboardButton(f'𝖳𝗂𝗉𝗌', 'info', ),
                 InlineKeyboardButton(f' 𝖳𝗂𝗉𝗌', 'info')
             ]
             )
@@ -1349,8 +1349,8 @@ async def auto_filter(client, msg, spoll=False):
         else:
             btn.insert(0, 
             [
-                InlineKeyboardButton(f'𝖳𝗂𝗉𝗌', 'info','oshada'),
-                InlineKeyboardButton(f' 𝖳𝗂𝗉𝗌', 'info','oshada')
+                InlineKeyboardButton(f'𝖳𝗂𝗉𝗌', 'info', ),
+                InlineKeyboardButton(f' 𝖳𝗂𝗉𝗌', 'info', )
             ])
             
                       
